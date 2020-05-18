@@ -538,7 +538,7 @@ def Trail(uniqueness, responsiveness, strategy, phenotype_num):
     print(' ')
     
 
-    plt.plot(list(accus.keys()), list(accus.values()), 'o-', label='hybrid active learning(uncertainty score + entropy)')
+    plt.plot(list(accus.keys()), list(accus.values()), 'o-', label= args.strategy + 'active learning')
     if args.random:
         plt.plot(list(accus.keys()), list(accusR.values()), 'o-', label = 'random learning')
     plt.legend(loc='best')
